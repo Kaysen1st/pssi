@@ -43,7 +43,7 @@ const McDonalds = () => {
       <KioskDemo
         title="Step-by-Step Guide to Using McDonald's Self-Ordering Kiosk"
         steps={steps}
-        videoUrl="https://youtube.com/shorts/aGgO68AskD4" // Replace with main demo video URL
+        videoUrl="https://youtube.com/shorts/aGgO68AskD4?feature=share" // Replace with main demo video URL
       />
       
       <AnimatedCard delay={0.5}>

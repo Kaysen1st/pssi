@@ -43,7 +43,7 @@ const Chatime = () => {
       <KioskDemo
         title="Step-by-Step Guide to Using Chatime Self-Ordering Kiosk"
         steps={steps}
-        videoUrl="https://youtube.com/shorts/FFZOc7ndiAk" // Replace with main demo video URL
+        videoUrl="https://youtube.com/shorts/FFZOc7ndiAk?feature=share" // Replace with main demo video URL
       />
       
       <AnimatedCard delay={0.5}>

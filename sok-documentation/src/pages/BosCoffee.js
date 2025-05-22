@@ -43,7 +43,7 @@ const BosCoffee = () => {
       <KioskDemo
         title="Step-by-Step Guide to Using Bo's Coffee Self-Ordering Kiosk"
         steps={steps}
-        videoUrl="https://youtube.com/shorts/Tz8ApqPeCFc" // Replace with main demo video URL
+        videoUrl="https://youtube.com/shorts/Tz8ApqPeCFc?feature=share" // Replace with main demo video URL
       />
       
       <AnimatedCard delay={0.5}>
