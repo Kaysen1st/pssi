@@ -9,6 +9,14 @@ const VideoContainer = styled(motion.div)`
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   margin: 2rem 0;
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+`;
+
+const StyledReactPlayer = styled(ReactPlayer)`
+  position: absolute;
+  top: 0;
+  left: 0;
 `;
 
 const VideoPlayer = ({ url, title }) => {
@@ -18,16 +26,22 @@ const VideoPlayer = ({ url, title }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <ReactPlayer
+      <StyledReactPlayer
         url={url}
-        controls
         width="100%"
-        height="500px"
+        height="100%"
+        controls={true}
+        playing={false}
         light={false}
         pip={true}
         config={{
           youtube: {
-            playerVars: { showinfo: 1 }
+            playerVars: {
+              origin: window.location.origin,
+              enablejsapi: 1,
+              widgetid: 1,
+              autoplay: 0
+            }
           }
         }}
       />
