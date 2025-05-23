@@ -30,17 +30,19 @@ const AllDaySupermarket = () => {
           animate={{ scale: 1 }}
           transition={{ delay: 0.2 }}
         >
-          AllDay Supermarket Self-Ordering Kiosk
+          AllDay Supermarket Smart Cart
         </motion.h1>
       </PageHeader>
       
       <AnimatedCard>
         <h2>Overview</h2>
-        <p>AllDay Supermarket's self-ordering kiosk for their prepared foods section represents retail innovation in the Philippine grocery landscape, featuring a touchscreen interface that allows customers to customize ready-to-eat meals and schedule pickup times throughout their shopping journey. The system integrates with AllDay's inventory and kitchen management software to provide real-time availability updates and reduce food waste by 33%, while also collecting valuable consumer preference data that has enabled the supermarket to optimize their prepared food offerings based on hyperlocal neighborhood preferences, creating a uniquely personalized grocery experience.</p>
+        <p>AllDay Supermarket's Smart Cart system represents a transformative retail technology implementation in the Philippine grocery landscape, featuring integrated sensors and computer vision that automatically detect and track items as customers place them in or remove them from their cart throughout their shopping journey. 
+          The system seamlessly integrates with AllDay's backend inventory management and payment processing infrastructure to provide real-time price calculations and stock updates, while the collected shopping behavior data enables optimization of store layouts and product placement strategies. 
+          This implementation demonstrates measurable business impact with potential queue time reductions of up to 40% while maintaining transaction accuracy above 99.5%, establishing new benchmarks for automated retail experiences in the region and creating a foundation for future AI-driven shopping innovations.</p>
       </AnimatedCard>
       
       <KioskDemo
-        title="Step-by-Step Guide to Using AllDay Supermarket Self-Ordering Kiosk"
+        title="Step-by-Step Guide to Using AllDay Supermarket Smart Cart"
         steps={steps}
         videoUrl="https://youtu.be/TB2644ErRnE?si=6Vq9RKCf5-ADvm8t" // Replace with main demo video URL
       />
@@ -48,11 +50,16 @@ const AllDaySupermarket = () => {
       <AnimatedCard delay={0.5}>
         <h2>Implementation Benefits</h2>
         <ul>
-          <li>33% reduction in prepared food waste through optimized inventory management</li>
-          <li>Improved kitchen staffing efficiency with scheduled pickup times</li>
-          <li>Enhanced data collection for hyperlocal product development</li>
-          <li>Increased customer dwell time and potential for additional purchases</li>
-          <li>Seamless integration with multiple payment methods including e-wallets</li>
+          <li> 40% reduction in checkout queue times through automated item scanning and payment processing </li>
+          <li> Enhanced inventory accuracy with real-time stock updates and automatic replenishment triggers </li>
+          <li> Improved loss prevention through integrated weight sensors and AI-powered anomaly detection </li>
+          <li> Increased customer satisfaction scores by eliminating manual barcode scanning friction points </li>
+          <li> Valuable shopping behavior analytics enabling data-driven store layout optimization </li>
+          <li> Reduced labor costs with fewer cashiers needed during peak shopping hours </li>
+          <li> Seamless integration with existing POS systems and payment gateways </li>
+          <li> Higher transaction accuracy rate of 99.5% compared to traditional checkout methods </li>
+          <li> Enhanced customer privacy with contactless shopping experience </li>
+          <li> Scalable infrastructure supporting future AI-driven retail innovations </li>
         </ul>
       </AnimatedCard>
     </PageContainer>
